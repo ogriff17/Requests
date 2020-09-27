@@ -1,0 +1,15 @@
+/*Do you have to connect it to an HTML file? how does that work?*/
+$primary-color:#272727;
+$accent-color:#ff652f;
+$text-color:#fff;
+
+$font-weight: (
+    "regular":400,
+     "medium":500,
+     "bold":700
+);
+
+body{
+    background:$primary-color;
+    font-weight: map-get($font-weight , bold);
+}
