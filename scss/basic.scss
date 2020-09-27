@@ -1,5 +1,33 @@
 /*Do you have to connect it to an HTML file? how does that work?*/
-$primary-color:#272727;
+@import 'abstracts/variables';
+@import 'abstracts/functions';
+@import 'abstracts/mixins';
+
+@import 'vendors/bootstrap';
+@import 'vendors/jquery-ui';
+
+@import 'base/reset';
+@import 'base/typography';
+
+@import 'layout/navigation';
+@import 'layout/grid';
+@import 'layout/header';
+@import 'layout/footer';
+@import 'layout/sidebar';
+@import 'layout/forms';
+
+@import 'components/buttons';
+@import 'components/carousel';
+@import 'components/slider';
+
+@import 'pages/home';
+@import 'pages/about';
+@import 'pages/contact';
+
+@import 'themes/theme';
+@import 'themes/admin';
+/*These are the variables--they go here:*/
+$primary-color:#070606;
 $accent-color:#ff652f;
 $text-color:#fff;
 
@@ -11,5 +39,6 @@ $font-weight: (
 
 body{
     background:$primary-color;
-    font-weight: map-get($font-weight , bold);
+    color:$text-color;
+    font-weight: map-get($font-weight, bold);
 }
